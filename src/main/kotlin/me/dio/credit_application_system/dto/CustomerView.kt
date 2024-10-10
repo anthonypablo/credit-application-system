@@ -1,6 +1,5 @@
 package me.dio.credit_application_system.dto
 
-import me.dio.credit_application_system.entity.Address
 import me.dio.credit_application_system.entity.Customer
 import java.math.BigDecimal
 
@@ -22,5 +21,4 @@ data class CustomerView(
         zipCode = customer.address.zipCode,
         street = customer.address.street
         )
-    }
 }
