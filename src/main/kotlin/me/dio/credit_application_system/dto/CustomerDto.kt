@@ -11,11 +11,9 @@ import java.math.BigDecimal
 data class CustomerDto (
     @field:NotEmpty(message = "O campo não pode ser deixado em branco") val firstName: String,
     @field:NotEmpty(message = "O campo não pode ser deixado em branco") val lastName: String,
-    @field:NotEmpty(message = "O campo não pode ser deixado em branco")
-    @field:CPF (message = "CPF inválido") val cpf: String,
-    @field:NotNull(message = "Valor inválido" ) val income: BigDecimal,
-    @field:NotEmpty(message = "O campo não pode ser deixado em branco")
-    @field:Email(message = "e-mail inválido") val email: String,
+    @field:NotEmpty(message = "O campo não pode ser deixado em branco")@field:CPF (message = "CPF inválido") val cpf: String,
+    @field:NotNull(message = "Valor inválido") val income: BigDecimal,
+    @field:NotEmpty(message = "O campo não pode ser deixado em branco")@field:Email(message = "e-mail inválido") val email: String,
     @field:NotEmpty(message = "O campo não pode ser deixado em branco") val password: String,
     @field:NotEmpty(message = "O campo não pode ser deixado em branco") val zipCode: String,
     @field:NotEmpty(message = "O campo não pode ser deixado em branco") val street: String
