@@ -9,7 +9,7 @@ data class CreditViewList(
     val creditValue: BigDecimal,
     val numbOfInstallments: Int
 ) {
-    constructor(credit: Credit): this(
+    constructor(credit: Credit) : this(
         creditCode = credit.creditCode,
         creditValue = credit.creditValue,
         numbOfInstallments = credit.numberOfInstallments
