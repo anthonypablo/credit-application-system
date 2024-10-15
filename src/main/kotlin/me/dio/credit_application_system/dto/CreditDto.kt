@@ -11,7 +11,7 @@ data class CreditDto(
     @field:NotNull(message = "Valor inválido") val creditValue: BigDecimal,
     @field:Future(message = "A data da parcela deve ser futura") val dayFirstOfInstallment: LocalDate,
     val numberOfInstallments: Int,
-    @field:NotNull(message = "Valor inválido") val customerId: Long
+    @field:NotNull(message = "Valor inválido") val customerId: Long?
 ) {
 
     fun toEntity(): Credit = Credit(
